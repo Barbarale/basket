@@ -15,12 +15,15 @@ class Product {
     }
 }
     const shopBasket = new Basket();
+
     const oranges = new Product('Pomarańcze LUZ', 7.55);
     console.log(oranges);
-    const cucumbers = new Product('Ogórek duży', 8.2);
 
+    const cucumbers = new Product('Ogórek duży', 8.2);
     shopBasket.add(cucumbers);
 
-    console.log(oranges);
+    const strawberries = new Product('Truskawka', 10.5);
+    shopBasket.add(strawberries);
 
+    console.log(oranges);
     console.log(shopBasket);
